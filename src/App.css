@@ -1,46 +1,51 @@
-.calc-body{
-  width: 300px;
+* {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.calc-body {
+  width: 250px;
   background: lightslategrey;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px 20px;
 }
 
-.value-container{
-  padding-top: 1.75%;
+.screen-container {
+  padding-bottom: 50px;
 }
 
-.value-container input{
+.screen-container input {
   display: block;
-  width: 75%;
+  width: 85%;
   border: none;
-  height: 30px;
+  height: 50px;
   text-align: right;
   padding: 0 10px;
   margin: 0 auto;
-  font-size: 22px;
-  font-weight: 700;
   color: lightslategrey;
+  border-radius: 10px;
 }
 
-.buttons-container{
+.buttons-container {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
-.buttons-container button{
+.buttons-container button {
   width: 20%;
-  height: 30px;
+  height: 40px;
   line-height: 30px;
   margin: 2%;
   border: none;
   outline: none;
   background: white;
   color: lightslategrey;
-  font-weight: 700;
-}
-
-.buttons-container button:hover{
-  box-shadow: 0 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
