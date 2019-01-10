@@ -2,7 +2,7 @@
   "name": "wizzard-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sergeikd.github.io/wizzard-react/",
+  "homepage": "https://sergeikd.github.io/calculator-react-redux-typescript/",
   "dependencies": {
     "@types/classnames": "^2.2.6",
     "@types/jest": "^23.3.10",
