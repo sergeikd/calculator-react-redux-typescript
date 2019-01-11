@@ -1,10 +1,8 @@
 import React from "react";
 
-interface IScreen {
-    value: string;
-}
+import { ICalcState } from "../common/interfaces";
 
-export const Screen: React.FC<IScreen> = ({value}): JSX.Element => {
+export const Screen: React.FC<ICalcState> = ({value}): JSX.Element => {
     return (
         <div className="screen-container">
           <input type="text" value={value} />

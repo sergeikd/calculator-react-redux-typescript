@@ -14,9 +14,9 @@ export class Keypad extends Component<CalcProps> {
                         case "C":
                             return (<button onClick={clear} key={item}>{item}</button>);
                         case "=":
-                            return (<button onClick={showResult.bind(this, value)} key={item}>{item}</button>);
+                            return (<button onClick={showResult(value)} key={item}>{item}</button>);
                         default:
-                            return (<button onClick={addElem.bind(this, item)} key={item}>{item}</button>);
+                            return (<button onClick={addElem(item)} key={item}>{item}</button>);
                     }
                 })}
             </div>

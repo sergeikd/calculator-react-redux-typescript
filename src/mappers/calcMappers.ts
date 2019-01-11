@@ -11,7 +11,7 @@ type MapDispatchToPropsType = (dispatch: Dispatch) => IMapDispatchToProps;
 
 export const mapDispatchToProps: MapDispatchToPropsType = (dispatch) => {
     return {
-        addElem: (text: string) => {
+        addElem: (text: string) => () => {
             dispatch({
                 type: "ADD_DIGIT_OR_OPERATION",
                 text,
@@ -24,7 +24,7 @@ export const mapDispatchToProps: MapDispatchToPropsType = (dispatch) => {
             });
         },
 
-        showResult: (value: string) => {
+        showResult: (value: string) => () => {
             dispatch({
                 type: "SHOW_RESULT",
                 value,

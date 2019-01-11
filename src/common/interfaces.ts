@@ -3,7 +3,7 @@ export interface ICalcState {
 }
 
 export interface IMapDispatchToProps {
-    addElem: (text: string) => void;
+    addElem: (text: string) => () => void;
     clear: () => void;
-    showResult: (value: string) => void;
+    showResult: (value: string) => () => void;
 }
