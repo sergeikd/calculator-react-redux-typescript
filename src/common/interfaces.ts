@@ -1,10 +1,5 @@
 export interface ICalcState {
     value: string;
-    keys: string[];
-}
-export interface ICalcProps extends IMapDispatchToProps {
-    value: string;
-    keys: string[];
 }
 
 export interface IMapDispatchToProps {

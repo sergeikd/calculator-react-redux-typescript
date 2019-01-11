@@ -1,13 +1,13 @@
+import { Dispatch } from "redux";
 import { ICalcState, IMapDispatchToProps } from "../common/interfaces";
 
 export const mapStateToProps: (state: ICalcState) => ICalcState = state => {
     return {
         value: state.value,
-        keys: state.keys,
     };
 };
 
-type MapDispatchToPropsType = (dispatch: any) => IMapDispatchToProps; // what FUCKING type is dispatch???
+type MapDispatchToPropsType = (dispatch: Dispatch) => IMapDispatchToProps;
 
 export const mapDispatchToProps: MapDispatchToPropsType = (dispatch) => {
     return {

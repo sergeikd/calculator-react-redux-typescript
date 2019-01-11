@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
-import { ICalcProps } from "../common/interfaces";
+import { CalcProps } from "../common/types";
 
-export class Keypad extends Component<ICalcProps> {
+export class Keypad extends Component<CalcProps> {
     render(): React.ReactNode {
-        const { value, keys, addElem, clear, showResult } = this.props;
+        const { value, addElem, clear, showResult } = this.props;
+        const keys: string[] = ["7", "8", "9", "-", "4", "5", "6", "/", "1", "2", "3", "*", "0", "C", "=", "+"];
+
         return (
             <div className="buttons-container">
                 {keys.map((item: string) => {

@@ -9,7 +9,6 @@ type CalcReducer = (state: ICalcState | undefined, action: ICalcAction) => ICalc
 
 const initialState: ICalcState = {
     value: "0",
-    keys: ["7", "8", "9", "-", "4", "5", "6", "/", "1", "2", "3", "*", "0", "C", "=", "+"],
 };
 
 export const calcReducer: CalcReducer = (state = initialState, action: ICalcAction) => {

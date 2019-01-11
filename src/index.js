@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 import "./index.css";
-import { Calc } from "./App";
+import Calc from "./App";
 import { calcReducer } from "./reducers/calcReducer";
 import * as serviceWorker from "./serviceWorker";
 
